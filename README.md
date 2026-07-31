@@ -1,5 +1,7 @@
 # Magento 2 — Envia Live Shipping Rates
 
+**Language:** **English** · [Español](README.es.md)
+
 **Live multi-carrier checkout rates** for Magento 2 using the [Envia.com Shipping API](https://docs.envia.com/docs/ecommerce-checkout).
 
 Envia’s official “Cotización Automática / Live checkout rates” product supports Shopify, WooCommerce, Wix, etc. — **not Magento 2**. This module implements the same capability as a **custom Magento shipping carrier**.
