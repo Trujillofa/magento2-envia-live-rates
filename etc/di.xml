@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- After all carriers collect: hide mstrate if Envia rates present -->
+    <type name="Magento\Shipping\Model\Shipping">
+        <plugin name="dt_envia_hide_mstrate_when_envia"
+                type="DepositoTrujillo\EnviaShipping\Plugin\HideMstrateWhenEnviaPlugin"
+                sortOrder="50"/>
+        <plugin name="dt_envia_hide_mstrate_when_local_free"
+                type="DepositoTrujillo\EnviaShipping\Plugin\HideMstrateWhenLocalFreePlugin"
+                sortOrder="51"/>
+    </type>
+</config>

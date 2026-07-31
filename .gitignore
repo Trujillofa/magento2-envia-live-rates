@@ -1,0 +1,26 @@
+# Secrets
+.env
+.env.*
+*.pem
+*token*
+**/credentials*
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Local outputs
+/reports/
+/coverage*.json
+*.log

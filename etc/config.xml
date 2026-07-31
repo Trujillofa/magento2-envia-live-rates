@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <envia>
+                <active>0</active>
+                <model>DepositoTrujillo\EnviaShipping\Model\Carrier</model>
+                <title>Envío con cotización en vivo</title>
+                <name>Envia</name>
+                <sallowspecific>1</sallowspecific>
+                <specificcountry>CO</specificcountry>
+                <sandbox>1</sandbox>
+                <api_token/>
+                <carriers_list>servientrega,interrapidisimo,coordinadora</carriers_list>
+                <parcel_max_kg>100</parcel_max_kg>
+                <require_dimensions>0</require_dimensions>
+                <default_length_cm>30</default_length_cm>
+                <default_width_cm>20</default_width_cm>
+                <default_height_cm>15</default_height_cm>
+                <markup_type>none</markup_type>
+                <markup_value>0</markup_value>
+                <cache_ttl>600</cache_ttl>
+                <timeout_ms>8000</timeout_ms>
+                <show_eta>1</show_eta>
+                <one_method_per_carrier>1</one_method_per_carrier>
+                <hide_mstrate_when_envia>1</hide_mstrate_when_envia>
+                <backup_rate_active>0</backup_rate_active>
+                <backup_rate_price>0</backup_rate_price>
+                <backup_rate_title>Tarifa de respaldo</backup_rate_title>
+                <origin_name>Warehouse</origin_name>
+                <origin_phone/>
+                <origin_street/>
+                <origin_city/>
+                <origin_state/>
+                <origin_postal_code/>
+                <origin_country>CO</origin_country>
+                <handling_fee>0</handling_fee>
+                <sort_order>15</sort_order>
+            </envia>
+            <!-- City-scoped free delivery (optional). Not Magento core freeshipping. -->
+            <dtlocalfree>
+                <active>0</active>
+                <model>DepositoTrujillo\EnviaShipping\Model\LocalFreeCarrier</model>
+                <title>Local free delivery</title>
+                <name>Free local shipping</name>
+                <free_cities></free_cities>
+                <hide_mstrate_when_local_free>1</hide_mstrate_when_local_free>
+                <sallowspecific>1</sallowspecific>
+                <specificcountry>CO</specificcountry>
+                <showmethod>0</showmethod>
+                <sort_order>5</sort_order>
+            </dtlocalfree>
+        </carriers>
+    </default>
+</config>

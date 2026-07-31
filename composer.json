@@ -1,0 +1,38 @@
+{
+  "name": "depositotrujillo/module-envia-shipping",
+  "description": "Magento 2 live multi-carrier checkout rates via Envia.com Shipping API (hybrid with table-rate carriers). Colombia DANE locate, markup, optional city-scoped free shipping.",
+  "type": "magento2-module",
+  "license": "MIT",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Depósito Trujillo",
+      "homepage": "https://www.depositotrujillo.co"
+    }
+  ],
+  "keywords": [
+    "magento2",
+    "shipping",
+    "envia",
+    "colombia",
+    "checkout",
+    "live-rates",
+    "servientrega",
+    "coordinadora"
+  ],
+  "require": {
+    "php": ">=8.1",
+    "magento/framework": "*",
+    "magento/module-shipping": "*",
+    "magento/module-quote": "*",
+    "magento/module-offline-shipping": "*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "DepositoTrujillo\\EnviaShipping\\": ""
+    }
+  }
+}
